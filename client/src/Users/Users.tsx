@@ -1,3 +1,4 @@
+import IonIcon from "@reacticons/ionicons"
 import { Link } from "react-router-dom"
 
 const Users = () => {
@@ -8,7 +9,10 @@ const Users = () => {
                 <p className="font-semibold text-2xl">Users</p>
                 <hr className="pb-10" />
                 <Link to={'/Users/create'} >
-                    
+                    <div className="">
+                        <p className="">Add User</p>
+                        <p className=""><IonIcon name="add"></IonIcon></p>
+                    </div>
                 </Link>
             </div>
         </div>
