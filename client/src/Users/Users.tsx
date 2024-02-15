@@ -1,7 +1,12 @@
 import IonIcon from "@reacticons/ionicons"
+import { useState } from "react"
 import { Link } from "react-router-dom"
 
 const Users = () => {
+    const [users, SetUsers] = useState([{
+        Name: "Jehan", Email: "jehan@123.com", Age: 23
+    }])
+
   return (
     <div className="bg-blue-700 w-full h-screen">
         <div className="container mx-auto px-12 py-10">
@@ -17,14 +22,27 @@ const Users = () => {
                 <table className="table">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Age</th>
-                            <th>Action</th>
+                            <th className="px-16">Name</th>
+                            <th className="px-16">Email</th>
+                            <th className="px-16">Age</th>
+                            <th className="px-16">Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        
+                        {
+                            users.map((user) => {
+                                return (
+                                    <tr>
+                                        <td>{user.Name}</td>
+                                        <td>{user.Email}</td>
+                                        <td className="text-center">{user.Age}</td>
+                                        <td>
+                                            <button className="px-6 text-white py-1 rounded bg-blue-400 duration-500 hover:bg-blue-600">Edit</button>
+                                        </td>
+                                    </tr>
+                                )
+                            })
+                        }
                     </tbody>
                 </table>
             </div>
