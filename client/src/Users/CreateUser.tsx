@@ -20,7 +20,7 @@ const CreateUser = () => {
                 </Link>
 
                 <div className="py-4">
-                    <form>
+                    <form onSubmit={Submit}>
                         <div className="">
                             <label htmlFor="">Name : </label><br />
                             <input type="text" className="border rounded  border-gray-200 w-full mt-2 h-10 pl-2" 
