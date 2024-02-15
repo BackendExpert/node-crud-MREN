@@ -3,7 +3,7 @@ import { useState } from "react"
 import { Link } from "react-router-dom"
 
 const CreateUser = () => {
-    const [name, setName] = useState("")
+    const [name, SetName] = useState("")
     const [email, SetEmail] = useState("")
     const [age, SetAge] = useState("")
 
@@ -23,15 +23,21 @@ const CreateUser = () => {
                     <form>
                         <div className="">
                             <label htmlFor="">Name : </label><br />
-                            <input type="text" className="border rounded  border-gray-200 w-full mt-2 h-10 pl-2" />
+                            <input type="text" className="border rounded  border-gray-200 w-full mt-2 h-10 pl-2" 
+                            onChange={(e) => SetName(e.target.value)}
+                            />
                         </div>
                         <div className="">
                             <label htmlFor="">Email : </label><br />
-                            <input type="email" className="border rounded  border-gray-200 w-full mt-2 h-10 pl-2" />
+                            <input type="email" className="border rounded  border-gray-200 w-full mt-2 h-10 pl-2" 
+                            onChange={(e) => SetEmail(e.target.value)}
+                            />
                         </div>
                         <div className="">
                             <label htmlFor="">Age : </label><br />
-                            <input type="number" className="border rounded  border-gray-200 w-full mt-2 h-10 pl-2" />
+                            <input type="number" className="border rounded  border-gray-200 w-full mt-2 h-10 pl-2" 
+                            onChange={(e) => SetAge(e.target.value)}
+                            />
                         </div>
                         <div className="mt-4">
                             <button className="bg-green-500 px-12 py-2 text-white rounded duration-500 hover:bg-green-600">Submit</button>
