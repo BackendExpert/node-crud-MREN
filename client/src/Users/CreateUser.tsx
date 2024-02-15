@@ -18,7 +18,7 @@ const CreateUser = () => {
                     <form>
                         <div className="">
                             <label htmlFor="">Name : </label><br />
-                            <input type="text" className="border rounded  border-gray-400 w-full mt-2 h-10" />
+                            <input type="text" className="border rounded  border-gray-200 w-full mt-2 h-10" />
                         </div>
                     </form>
                 </div>
