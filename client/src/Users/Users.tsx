@@ -7,7 +7,9 @@ const Users = () => {
             <div className="mx-10 py-12 bg-white rounded px-12">
                 <p className="font-semibold text-2xl">Users</p>
                 <hr className="pb-10" />
-
+                <Link to={'/Users/create'} >
+                    
+                </Link>
             </div>
         </div>
     </div>
