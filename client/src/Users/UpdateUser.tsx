@@ -1,7 +1,7 @@
 import IonIcon from "@reacticons/ionicons"
 import { Link } from "react-router-dom"
 
-const CreateUser = () => {
+const UpdateUser = () => {
   return (
     <div className="bg-blue-600 w-full h-screen">
         <div className="container mx-auto py-10 px-12">
@@ -39,4 +39,4 @@ const CreateUser = () => {
   )
 }
 
-export default CreateUser
+export default UpdateUser
