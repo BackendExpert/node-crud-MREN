@@ -6,9 +6,9 @@ const CreateUser = () => {
         <div className="container mx-auto py-10 px-12">
             <div className="bg-white py-4 px-12 rounded">
                 <h1 className="text-xl font-semibold">Add New User</h1>
-                <div className="flex w-[15%]">
-                    <p className="">Back</p>
-                    <p className=""><IonIcon name="arrow-back"></IonIcon></p>
+                <div className="flex w-[15%] mt-4">
+                    <p className="pt-[2px]"><IonIcon name="arrow-back"></IonIcon></p>
+                    <p className="pl-2">Back</p>
                 </div>
             </div>
         </div>
