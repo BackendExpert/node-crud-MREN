@@ -28,6 +28,9 @@ const CreateUser = () => {
                             <label htmlFor="">Age : </label><br />
                             <input type="number" className="border rounded  border-gray-200 w-full mt-2 h-10 pl-2" />
                         </div>
+                        <div className="mt-4">
+                            <button className="bg-green-500 px-12">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
