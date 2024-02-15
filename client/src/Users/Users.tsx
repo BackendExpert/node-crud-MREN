@@ -37,7 +37,7 @@ const Users = () => {
                                         <td>{user.Email}</td>
                                         <td className="text-center">{user.Age}</td>
                                         <td>
-                                            <button className="px-6 text-white py-1 rounded bg-blue-400 duration-500 hover:bg-blue-600">Edit</button>
+                                            <Link to={'/Users/update'}><button className="px-6 text-white py-1 rounded bg-blue-400 duration-500 hover:bg-blue-600">Edit</button></Link>
                                             <button className="px-6 text-white py-1 rounded bg-red-500 ml-2 duration-500 hover:bg-red-700">Delete</button>
                                         </td>
                                     </tr>
