@@ -9,7 +9,7 @@ const Users = () => {
                 <p className="font-semibold text-2xl">Users</p>
                 <hr className="pb-10" />
                 <Link to={'/Users/create'} >
-                    <div className="flex">
+                    <div className="flex bg-green-700">
                         <p className="text-md">Add User</p>
                         <p className="pl-2 py-[2px]"><IonIcon name="add"></IonIcon></p>
                     </div>
