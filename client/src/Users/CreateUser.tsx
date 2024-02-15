@@ -13,6 +13,15 @@ const CreateUser = () => {
                         <p className="pl-2">Back</p>
                     </div>
                 </Link>
+
+                <div className="">
+                    <form>
+                        <div className="">
+                            <label htmlFor="">Name : </label><br />
+                            <input type="text" className="border mt-2 h-10" />
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
