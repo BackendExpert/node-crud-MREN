@@ -1,7 +1,12 @@
 import IonIcon from "@reacticons/ionicons"
+import { useState } from "react"
 import { Link } from "react-router-dom"
 
 const CreateUser = () => {
+    const [name, setName] = useState("")
+    const [email, SetEmail] = useState("")
+    const [age, SetAge] = useState("")
+
   return (
     <div className="bg-blue-600 w-full h-screen">
         <div className="container mx-auto py-10 px-12">
