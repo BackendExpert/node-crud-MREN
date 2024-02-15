@@ -12,7 +12,7 @@ const Users = () => {
         <div className="container mx-auto px-12 py-10">
             <div className="mx-10 py-12 bg-white rounded px-12">
                 <p className="font-semibold text-2xl">Users</p>
-                <Link to={'/Users/create'} >
+                <Link to={'/Users/Create'} >
                     <div className="flex bg-green-600 duration-500 hover:bg-green-700 md:w-[15%] md:pl-8 py-2 rounded text-white">
                         <p className="text-md">Add User</p>
                         <p className="pl-2 py-[2px]"><IonIcon name="add"></IonIcon></p>
@@ -37,7 +37,7 @@ const Users = () => {
                                         <td>{user.Email}</td>
                                         <td className="text-center">{user.Age}</td>
                                         <td>
-                                            <Link to={'/Users/update'}><button className="px-6 text-white py-1 rounded bg-blue-400 duration-500 hover:bg-blue-600">Edit</button></Link>
+                                            <Link to={'/Users/Update'}><button className="px-6 text-white py-1 rounded bg-blue-400 duration-500 hover:bg-blue-600">Edit</button></Link>
                                             <button className="px-6 text-white py-1 rounded bg-red-500 ml-2 duration-500 hover:bg-red-700">Delete</button>
                                         </td>
                                     </tr>
