@@ -1,4 +1,5 @@
 import IonIcon from "@reacticons/ionicons"
+import axios from "axios"
 import { useState } from "react"
 import { Link } from "react-router-dom"
 
@@ -6,6 +7,13 @@ const CreateUser = () => {
     const [name, SetName] = useState("")
     const [email, SetEmail] = useState("")
     const [age, SetAge] = useState("")
+
+    const Submit = (e) => {
+        e.preventDefault();
+        axios.post("http://localhost:3001/createUser", {name, email, age})
+        .then(result => console.log(result))
+        .catch(err => console.log(err))
+    }
 
   return (
     <div className="bg-blue-600 w-full h-screen">
