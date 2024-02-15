@@ -14,7 +14,7 @@ const CreateUser = () => {
                     </div>
                 </Link>
 
-                <div className="">
+                <div className="py-4">
                     <form>
                         <div className="">
                             <label htmlFor="">Name : </label><br />
