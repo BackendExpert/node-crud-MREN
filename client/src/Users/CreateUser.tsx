@@ -1,3 +1,5 @@
+import IonIcon from "@reacticons/ionicons"
+
 const CreateUser = () => {
   return (
     <div className="bg-blue-600 w-full h-screen">
@@ -6,7 +8,7 @@ const CreateUser = () => {
                 <h1 className="text-xl font-semibold">Add New User</h1>
                 <div className="flex w-[15%]">
                     <p className="">Back</p>
-                    <p className=""></p>
+                    <p className=""><IonIcon name="arrow-back"></IonIcon></p>
                 </div>
             </div>
         </div>
