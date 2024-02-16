@@ -14,7 +14,7 @@ const CreateUser = () => {
         axios.post("http://localhost:3001/createUser", {name, email, age})
         .then(result => {
             console.log(result)
-            navigate('/')
+            navigate('/Users')
         })
         .catch(err => console.log(err))
     }
