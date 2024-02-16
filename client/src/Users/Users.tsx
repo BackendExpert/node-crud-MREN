@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 const Users = () => {
-    const [users, SetUsers] = useState([])
+    const [users, SetUsers] = useState<any[]>([])
 
     useEffect(() => {
         axios.get('http://localhost:3001')
