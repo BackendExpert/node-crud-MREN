@@ -1,11 +1,16 @@
 import IonIcon from "@reacticons/ionicons"
-import { useState } from "react"
+import axios from "axios"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 const Users = () => {
-    const [users, SetUsers] = useState([{
-        Name: "Jehan", Email: "jehan@123.com", Age: 23
-    }])
+    const [users, SetUsers] = useState([])
+
+    useEffect(() => {
+        axios.get('http://localhost:3001')
+        .then(result => SetUsers(result.data))
+        .catch(err => console.log(err))
+    }, [])
 
   return (
     <div className="bg-blue-700 w-full h-screen">
@@ -33,9 +38,9 @@ const Users = () => {
                             users.map((user) => {
                                 return (
                                     <tr>
-                                        <td>{user.Name}</td>
-                                        <td>{user.Email}</td>
-                                        <td className="text-center">{user.Age}</td>
+                                        <td>{user.name}</td>
+                                        <td>{user.email}</td>
+                                        <td className="text-center">{user.age}</td>
                                         <td>
                                             <Link to={'/Users/Update'}><button className="px-6 text-white py-1 rounded bg-blue-400 duration-500 hover:bg-blue-600">Edit</button></Link>
                                             <button className="px-6 text-white py-1 rounded bg-red-500 ml-2 duration-500 hover:bg-red-700">Delete</button>
